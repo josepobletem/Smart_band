@@ -1,2 +1,18 @@
-# Smart_band
-Smartband MVP es un prototipo funcional de una pulsera inteligente desarrollada en Python, diseñada para brindar recomendaciones personalizadas de ejercicio en tiempo real
+# Smartband MVP
+
+## Funcionalidad
+
+- Sugerencias de ejercicios en tiempo real según FC.
+- Variables: Estatura, grasa corporal.
+- Simulación o conexión real por serial (ESP32).
+- API REST con FastAPI.
+- Historial en JSON y SQLite.
+- GUI con Tkinter.
+- Docker y entorno virtual.
+
+## Uso
+
+```bash
+make install
+make run
+```
