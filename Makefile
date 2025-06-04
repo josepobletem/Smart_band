@@ -1,8 +1,11 @@
+# Makefile mejorado
 install:
-	pip install -r requirements.txt
+	python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
 
 test:
-	pytest
+	. .venv/bin/activate && pytest
 
-run:
-	python main.py
+lint:
+	. .venv/bin/activate && pylint api/ recommender/ storage/ sensors/
+
+ci: install lint test
