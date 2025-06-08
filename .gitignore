@@ -25,3 +25,7 @@ __pycache__/
 # Archivos de sistema
 .DS_Store
 Thumbs.db
+
+# Ignorar base de datos y JSON de historial
+session.db
+session_history.json
