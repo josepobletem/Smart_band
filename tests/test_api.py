@@ -2,6 +2,17 @@ from fastapi.testclient import TestClient
 from api.app import app
 
 def test_post_recommend():
+    """
+    Prueba el endpoint '/recommend' enviando datos de usuario.
+
+    Envía un JSON con datos de frecuencia cardíaca, altura, peso, edad,
+    porcentaje de grasa corporal y objetivo. Verifica que la respuesta tenga
+    código de estado 200 y contenga la clave 'recommendation'.
+
+    Returns
+    -------
+    None
+    """
     client = TestClient(app)
     response = client.post("/recommend", json={
         "heart_rate": 125,
@@ -15,6 +26,17 @@ def test_post_recommend():
     assert "recommendation" in response.json()
 
 def test_create_user():
+    """
+    Prueba el endpoint '/user/create' enviando datos de perfil de usuario.
+
+    Envía un JSON con nombre, altura, peso, edad, porcentaje de grasa corporal
+    y objetivo. Verifica que la respuesta tenga código de estado 200, contenga
+    la clave 'user_id' y que el nombre retornado sea igual al enviado.
+
+    Returns
+    -------
+    None
+    """
     client = TestClient(app)
     response = client.post("/user/create", json={
         "name": "Luis",

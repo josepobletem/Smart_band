@@ -1,0 +1,31 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de pytest
+.cache/
+.pytest_cache/
+
+# Logs y resultados temporales
+*.log
+
+# Archivos de configuración de VSCode, PyCharm, etc.
+.vscode/
+.idea/
+
+# Archivos generados por Jupyter/Notebooks (opcional)
+.ipynb_checkpoints/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar base de datos y JSON de historial
+session.db
+session_history.json
