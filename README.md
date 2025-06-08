@@ -14,7 +14,40 @@
 
 # Proyecto base: smartband_mvp/
 
-<pre><code>```text smartband_mvp/ ├── api/ │ └── app.py ├── recommender/ │ └── workout_engine.py ├── sensors/ │ ├── heart_rate_simulator.py │ └── serial_interface.py ├── storage/ │ ├── history_logger.py │ ├── db_sqlite.py │ └── user_profile.py ├── gui/ │ └── dashboard.py ├── arduino/ │ └── connection_test.py ├── tests/ │ ├── test_engine.py │ ├── test_users.py │ ├── test_arduino.py │ ├── test_logger.py │ └── test_api.py ├── session_history.json ├── requirements.txt ├── Dockerfile ├── docker-compose.yml ├── Makefile ├── README.md └── main.py ```</code></pre>
+<details>
+<summary><strong>📂 Estructura del Proyecto</strong></summary>
+
+```text
+smartband_mvp/
+├── api/
+│   └── app.py
+├── recommender/
+│   └── workout_engine.py
+├── sensors/
+│   ├── heart_rate_simulator.py
+│   └── serial_interface.py
+├── storage/
+│   ├── history_logger.py
+│   ├── db_sqlite.py
+│   └── user_profile.py
+├── gui/
+│   └── dashboard.py
+├── arduino/
+│   └── connection_test.py
+├── tests/
+│   ├── test_engine.py
+│   ├── test_users.py
+│   ├── test_arduino.py
+│   ├── test_logger.py
+│   └── test_api.py
+├── session_history.json
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── Makefile
+├── README.md
+└── main.py
+
 
 ## Funcionalidad
 
