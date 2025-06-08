@@ -47,7 +47,7 @@ smartband_mvp/
 ├── Makefile
 ├── README.md
 └── main.py
-
+```
 
 ## Funcionalidad
 
